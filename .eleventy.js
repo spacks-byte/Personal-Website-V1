@@ -4,6 +4,9 @@ module.exports = function(eleventyConfig) {
   
   // Copy resources (images, etc.) to output
   eleventyConfig.addPassthroughCopy("resources");
+  
+  // Copy CNAME file for custom domain
+  eleventyConfig.addPassthroughCopy("CNAME");
 
   return {
     dir: {
