@@ -293,6 +293,7 @@ details[open] summary {
 @media (max-width: 600px) {
     .main {
         width:90% !important;
+        height:90% !important;
         grid-template-columns: 1fr;
     }
     .project-photo{
@@ -310,8 +311,11 @@ details[open] summary {
         margin-top: 0px;
     }
     .icon{
-        width: auto;
-        height: 90%;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-top: auto;
     }
 }
