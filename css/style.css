@@ -118,6 +118,10 @@ details[open] summary {
     text-decoration: underline gray; 
 }
 
+.boldtext {
+    font-weight: bold;
+}
+
 .contact {
     padding-top: 8px;
     padding-bottom: 8px;
