@@ -115,7 +115,7 @@ details[open] summary {
 
 #myname {
     font-weight: bold;
-    text-decoration: underline wavy red; 
+    text-decoration: underline wavy gray; 
 }
 
 .contact {
@@ -165,10 +165,17 @@ details[open] summary {
 .retrobutton{
     width: 88px;
     height: 31px;
+    cursor: pointer;
 }
 
+.retrobutton:hover {
+  outline: 1px dotted #000000;
+  outline-offset: -4px;
+}
 
-
+.retrobutton:active {
+    box-shadow: 1px 1px dimgray !important;
+}
 
 /* Perspective Square */
 #perspective-parent {
