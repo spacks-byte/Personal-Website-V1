@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About - Personal Website 💾</title>
+    <link rel="stylesheet" href="/css/tiny-brutalism.css"> 
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <div class="main box">
+        
+            <div class="sidebar">
+                <div class="icon"> <img src="/resources/tempicon.jpg" alt="Icon Image" width="100%" height="100%"> </div>
+                <div class="navbar">
+                    <h2 class="navbar-title">projects</h2>
+                    <ul class="navbar-list">
+                        <li><a href="/">home</a></li>
+                        <li><a href="/about/">about</a></li>
+                        <li><a href="/projects/">projects</a></li>
+                        <li><a href="/contact/">contact</a></li>
+                        <li><a href="/guides/">guides</a></li>
+                        <li><a href="/gear/">gear</a></li>
+                        <li><a href="/meta/">meta</a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="content">
+                
+<div class="projects-content">
+
+<details>
+  <summary class="button big-button">MarketMaker</summary>
+  <p class="project-subtitle">Automated Cryptocurrency Trading System</p>
+  <p class="project-date">[2025 Nov]</p>
+  <img src="/resources/marketmakers.png" alt="Project Image" class="project-photo">
+    <p class="project-description">The system was built for a crypto trading competition and has been tested in real market scenarios including a multiple week deployment on an AWS instance.</p>
+    <p class="project-description">Main logic of the trading script combines mean reversion, SMA crossover, and regime-switching strategies to identify optimal entry and exit points across crypto markets. </p>
+    <p class="project-description">By using the Kraken API for real-time data fetching and a custom back-testing framework the program is able to validate performance across multiple market conditions and cryptocurrencies. It then automatically select the best decision parameters while avoiding overfitting.</p>
+</details>
+
+<details>
+  <summary class="button big-button">Bookagement</summary>
+  <p class="project-subtitle">Book Management System</p>
+  <p class="project-date">[2024 May]</p>
+  <img src="/resources/bookagement.png" alt="Project Image" class="project-photo">
+    <p class="project-description">A self-hosted web-based system aimed at domestic users looking to keep better track of their physical book collection. </p>  
+    <p class="project-description">An initial core objective of the app was allowing for easy searching of books' locations within a household, however with time additional features such as book summaries, household book ratings, and personalized recommendations were added as they worked really well with the apps existing structure.</p>
+    <p class="project-description">The system is largely based on the Python Flask microframework and SQLite for the back-end and data storage however being a web based app additional technologies such as Jinja, HTML, and CSS were used alongside it to implement an ergonomic and visually cohesive UI. Below is a rough dataflow diagram of the app.</p>
+  <img src="/resources/bookagementdataflow.png" alt="Project Image" class="project-photo">
+</details>
+
+<details>
+  <summary class="button big-button">Thermal ToDo’s</summary>
+  <div class="thermaltodos-project">
+        <div class="thermaltodos-project-inner">
+            <p class="project-subtitle">Daily Management Scripting Project</p>
+            <p class="project-date">[2024 Feb]</p>
+            <br>
+            <p class="project-description">A small project involving a Raspberry Pi running Linux interfacing with an old thermal receipt printer via the ESC POS protocol. </p>
+            <p class="project-description">The script runs daily and uses multiple APIs and protocols, including Google's OAuth 2.0 to fetch data about the current weather, tech news, and active Google tasks which it then formats and prints out as small receipt-like notes.</p>
+        </div>
+        <img src="/resources/thermaltodos.png" alt="Project Image" class="project-photo thermaltodos-project-photo">
+    </div>
+  </details>
+
+<details>
+  <summary class="button big-button">GPoznanS</summary>
+  <p class="project-subtitle">API Visualizaion Web App</p>
+  <p class="project-date">[2023 Aug]</p>
+  <img src="/resources/gpoznans.png" alt="Project Image" class="project-photo">
+    <p class="project-description">This project came about as I wanted to get better at utilizing APIs even ones which might not have extensive documentation. After discovering that some cities around Poland have API endpoints which can be used to fetch various city data I decided to pick one of the cities and try and create a simple app to visualize the data.</p>
+    <p class="project-description">The app displays all the landmarks, parking meters, and public transport stations in Poznan and around it. Once you press any of the locations you can see additional information specific to that location category i.e. which transport lines pass through the station for public transport or which method of payment is accepted for parking meters.</p>
+    <p class="project-description">Streamlit library was used as a frontend to create a responsive and simple to use UI while avoiding the hassle related with structuring a website from scratch using HTML and CSS.</p>
+</details>
+
+<details>
+  <summary class="button big-button">Solar & Lunar Playing Cards</summary>
+  <p class="project-subtitle">Custom Deck of Playing Cards</p>
+  <p class="project-date">[2019 Oct]</p>
+  <img src="/resources/solarandlunar.jpg" alt="Project Image" class="project-photo">
+    <p class="project-description">  As part of my middle school final project I designed and produced 50 custom prototype decks of playing cards. The cards were produced by the largest card company in the world Cartamundi and use their standard True Linen B9 finish.</p>
+    <p class="project-description">The cards designs are based on very simple geometric shapes (triangles and circles) which when combined make up the more complex design elements on the card faces. This project was my first attempt at designing something digital and then getting it into production which ultimately left me with a physical product as an outcome of my work.</p>
+    <p class="project-description">As an additional challenge I decided to use this opportunity to plan out a possible crowdfunding campaign around the product. This gave me a crash course on aspects like how to price a product, international delivery logistics and how to plan a successful pre-order based production run.</p>
+</details>
+
+</div>
+
+            </div>
+
+    </div>
+    <footer>
+        <!-- Your footer content -->
+    </footer>
+  </body>
+</html>

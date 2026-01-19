@@ -1,0 +1,115 @@
+---
+layout: base.njk
+title: Home - Personal Website 💾
+---
+
+<h1>Antoni Spaczynski</h1>
+<p>simply said, I like fixing stuff that no longer works and building new things with skills that I learn.</p>
+<br>
+
+<div id="perspective-parent">
+    <div id="parent">
+        <div class="perspective-square" style="transform:translate3d(0, 0, 0px)"></div>
+        <div class="perspective-square" style="transform:translate3d(0, 0, -100px)"></div>
+        <div class="perspective-square" style="transform:translate3d(0, 0, -200px)"></div>
+        <div class="perspective-square" style="transform:translate3d(0, 0, -300px)"></div>
+        <div class="perspective-square" style="transform:translate3d(0, 0, -400px)"></div>
+        <div class="perspective-square" style="transform:translate3d(0, 0, -500px)"></div>
+        <div class="perspective-square" style="transform:translate3d(0, 0, -600px)"></div>
+        <div class="perspective-square" style="transform:translate3d(0, 0, -700px)"></div>
+        <div class="perspective-square" style="transform:translate3d(0, 0, -800px)"></div>
+        <div class="perspective-square" style="transform:translate3d(0, 0, -900px)"></div>
+        
+        <!-- Vertical grid lines top -->
+        <div class="grid-line grid-line-vertical grid-line-vertical-top" style="left: 0"></div>
+        <div class="grid-line grid-line-vertical grid-line-vertical-top" style="left: 25%"></div>
+        <div class="grid-line grid-line-vertical grid-line-vertical-top" style="left: 50%"></div>
+        <div class="grid-line grid-line-vertical grid-line-vertical-top" style="left: 75%"></div>
+        <div class="grid-line grid-line-vertical grid-line-vertical-top" style="left: 100%"></div>
+        
+        <!-- Horizontal grid lines left -->
+        <div class="grid-line grid-line-horizontal grid-line-horizontal-left" style="top: 0"></div>
+        <div class="grid-line grid-line-horizontal grid-line-horizontal-left" style="top: 25%"></div>
+        <div class="grid-line grid-line-horizontal grid-line-horizontal-left" style="top: 50%"></div>
+        <div class="grid-line grid-line-horizontal grid-line-horizontal-left" style="top: 75%"></div>
+        <div class="grid-line grid-line-horizontal grid-line-horizontal-left" style="top: 100%"></div>
+
+        <!-- Vertical grid lines bottom -->
+        <div class="grid-line grid-line-vertical grid-line-vertical-bottom" style="left: 0"></div>
+        <div class="grid-line grid-line-vertical grid-line-vertical-bottom" style="left: 25%"></div>
+        <div class="grid-line grid-line-vertical grid-line-vertical-bottom" style="left: 50%"></div>
+        <div class="grid-line grid-line-vertical grid-line-vertical-bottom" style="left: 75%"></div>
+        <div class="grid-line grid-line-vertical grid-line-vertical-bottom" style="left: 100%"></div>
+
+        <!-- Horizontal grid lines right -->
+        <div class="grid-line grid-line-horizontal grid-line-horizontal-right" style="top: 0"></div>
+        <div class="grid-line grid-line-horizontal grid-line-horizontal-right" style="top: 25%"></div>
+        <div class="grid-line grid-line-horizontal grid-line-horizontal-right" style="top: 50%"></div>
+        <div class="grid-line grid-line-horizontal grid-line-horizontal-right" style="top: 75%"></div>
+        <div class="grid-line grid-line-horizontal grid-line-horizontal-right" style="top: 100%"></div>
+        
+        <!-- Back face 4x4 grid - Vertical lines -->
+        <div class="back-grid-vertical" style="left: 0"></div>
+        <div class="back-grid-vertical" style="left: 25%"></div>
+        <div class="back-grid-vertical" style="left: 50%"></div>
+        <div class="back-grid-vertical" style="left: 75%"></div>
+        <div class="back-grid-vertical" style="left: 100%"></div>
+        
+        <!-- Back face 4x4 grid - Horizontal lines -->
+        <div class="back-grid-horizontal" style="top: 0"></div>
+        <div class="back-grid-horizontal" style="top: 25%"></div>
+        <div class="back-grid-horizontal" style="top: 50%"></div>
+        <div class="back-grid-horizontal" style="top: 75%"></div>
+        <div class="back-grid-horizontal" style="top: 100%"></div>
+    </div>
+
+    <p class="subtext">
+        For example this is a perspective square I built with html and css
+    </p>
+
+    
+<div class="controls">
+    <div class="control-group">
+        <label for="perspective">Perspective (px):</label>
+        <input type="number" id="perspective" value="900" min="800" max="5000" step="50">
+    </div>
+    
+    <div class="control-group">
+        <label>Perspective Origin:</label>
+        <div style="display: flex; gap: 10px; align-items: center;">
+            <input type="number" id="perspectiveOriginX" value="50" min="-80" max="190" step="5">
+            <span>%</span>
+            <input type="number" id="perspectiveOriginY" value="50" min="-20" max="125" step="5">
+            <span>%</span>
+        </div>
+    </div>
+</div>
+
+<script>
+    const parent = document.getElementById('parent');
+    const perspectiveInput = document.getElementById('perspective');
+    const perspectiveOriginX = document.getElementById('perspectiveOriginX');
+    const perspectiveOriginY = document.getElementById('perspectiveOriginY');
+    
+    perspectiveInput.addEventListener('input', (e) => {
+        parent.style.perspective = e.target.value + 'px';
+    });
+    
+    function updatePerspectiveOrigin() {
+        parent.style.perspectiveOrigin = perspectiveOriginX.value + '% ' + perspectiveOriginY.value + '%';
+    }
+    
+    perspectiveOriginX.addEventListener('input', updatePerspectiveOrigin);
+    perspectiveOriginY.addEventListener('input', updatePerspectiveOrigin);
+</script>
+
+
+</div>
+
+<br>
+
+<p>thanks for visiting my little slice on the endless sea [or more so network] that is the internet, I hope you enjoy your time here</p>
+<p>the website is mostly here as a portfolio of my past and future projects with some extra subpages like the gear that I use or some guides for things that I want to share with others</p>
+<p>feel free to browse around using the navbar and check out the subpages that might interest you</p>
+<p>disclaimer! I'm constantly working on making this website better so things might change from time to time.</p>
+
