@@ -297,6 +297,13 @@ details[open] summary {
 
 /* For Smaller Screens */
 
+@media (max-width: 900px) {
+    .main {
+        width: 90% !important;
+        grid-template-columns: 220px auto;
+    }
+}
+
 @media (max-width: 600px) {
     .main {
         width:90% !important;
